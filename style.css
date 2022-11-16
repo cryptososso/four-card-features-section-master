@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-   width: 360px;
+   width: 300px;
    height: auto;
    display: flex;
    flex-direction: column;
@@ -56,6 +56,7 @@ main{
    grid-template-columns: repeat(1, 1fr);
    align-items: center;
    justify-content: center;
+   position: relative;
 }
 
 main .card{
@@ -70,6 +71,10 @@ main .card{
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+main .card:hover,
+main .card:focus{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
 main h3{
    font-size: 18px;
    font-weight: 700;
@@ -110,8 +115,96 @@ main .card-4{
 .attribution 
 { font-size: 12px; 
   text-align: center; 
+
 }
 
 .attribution a { 
    color: hsl(228, 45%, 44%); 
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+   .container{
+      width: 750px;
+      height: auto;
+   }
+
+   header h2{
+      width: 750px;
+   }
+   
+   header h1{
+      width: 750px;
+   }
+   
+   header p{
+      width: 500px;
+      margin: 0 auto;
+   }
+
+   main .card-1{
+      position: absolute;
+      right: 350px;
+      border-top: 5px solid hsl(180, 62%, 55%);
+   }
+
+   main .card-4{
+      position: absolute;
+      left: 350px;
+      border-top: 5px solid hsl(212, 86%, 64%);
+   }
+
+   .attribution 
+{ font-size: 18px; 
+  text-align: center; 
+
+}
+
+   
+}
+
+@media screen 
+  and (min-device-width: 1600px) 
+  and (max-device-width: 2207px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+   .container{
+      width: 750px;
+      height: auto;
+      padding: 20px 0;
+   }
+
+   header h2{
+      width: 750px;
+   }
+   
+   header h1{
+      width: 750px;
+   }
+   
+   header p{
+      width: 500px;
+      margin: 0 auto;
+   }
+
+   main .card-1{
+      position: absolute;
+      right: 350px;
+      border-top: 5px solid hsl(180, 62%, 55%);
+   }
+
+   main .card-4{
+      position: absolute;
+      left: 350px;
+      border-top: 5px solid hsl(212, 86%, 64%);
+   }
+
+   .attribution 
+{ font-size: 18px; 
+  text-align: center; 
+
+}
+
+   
 }
